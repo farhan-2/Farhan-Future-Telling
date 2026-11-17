@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An assistant that is faithful to your will: it proposes, shows its reasoning, and accepts no for an answer.">
+  <title>The Compass | The Long Table</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-room="compass">
+  <a class="skip-link" href="#main">Skip to the room</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">The Long Table<span>A future-telling by Farhan Arshad</span></a>
+    <nav aria-label="Rooms">
+      <ol class="rooms">
+        <li><a href="index.html">Doorway</a></li>
+        <li><a href="table.html">The Table</a></li>
+        <li><a href="memory.html">The Memory Wall</a></li>
+        <li><a href="compass.html" aria-current="page">The Compass</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="page-intro" aria-labelledby="page-title">
+        <p class="eyebrow">Room 03 &middot; Pre-dawn</p>
+        <h1 id="page-title">The <em>Compass</em></h1>
+        <p class="lede">An assistant at the long table that never speaks first, shows its reasoning, and accepts no. It points. You walk.</p>
+      </section>
+
+      <section class="section" aria-labelledby="try-title">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Three promises</p>
+            <h2 id="try-title">Faithful to your will means <em>you</em> set the heading.</h2>
+            <ol class="rules">
+              <li><div><strong>It never speaks first.</strong><span>It answers when you ask.</span></div></li>
+              <li><div><strong>It shows its working.</strong><span>Every suggestion can say why, and what it is unsure of.</span></div></li>
+              <li><div><strong>It can be told no.</strong><span>Rejected means gone for the night, with no argument.</span></div></li>
+            </ol>
+          </div>
+
+          <div>
+            <p class="eyebrow">Try it</p>
+            <div class="compass-controls">
+              <label for="heading">Your heading tonight:</label>
+              <select id="heading" data-heading>
+                <option value="pitch">Finish the pitch deck</option>
+                <option value="family">Call home</option>
+                <option value="cook">Learn one dish properly</option>
+              </select>
+            </div>
+            <p class="system-voice">&gt; Heading set: <span class="heading-chip" data-chip>Finish the pitch deck</span></p>
+            <ul class="proposals" data-proposals aria-live="polite"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="horizon-title">
+        <div class="split">
+          <figure>
+            <img src="images/sunset.jpg" alt="A camel ride in an open plaza at sunset with city buildings behind." width="1000" height="1328" loading="lazy">
+            <figcaption><span>More life beyond the screen</span><span>An open horizon</span></figcaption>
+          </figure>
+          <div>
+            <h2 id="horizon-title">The night ends. <em>The direction is still mine.</em></h2>
+            <p class="lede">A good tool makes you faster and leaves you in charge. If it ever feels like it is steering, you can close the door.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="next-door" href="index.html">
+      <span>
+        <span class="eyebrow">Next room</span>
+        <span class="next-title">Back to the doorway</span>
+        <span class="lede">The door stays open. The direction is still yours.</span>
+      </span>
+      <span class="next-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <p class="colophon"><span>The Long Table is a speculative place. The residents are imagined.</span><span>Web Based Multimedia Design / Future Telling</span></p>
+  </footer>
+</body>
+</html>

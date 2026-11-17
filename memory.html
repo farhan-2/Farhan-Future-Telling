@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A shared wall where people write the dreams they want in the past. Every person in a memory can take it down.">
+  <title>The Memory Wall | The Long Table</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-room="memory">
+  <a class="skip-link" href="#main">Skip to the room</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">The Long Table<span>A future-telling by Farhan Arshad</span></a>
+    <nav aria-label="Rooms">
+      <ol class="rooms">
+        <li><a href="index.html">Doorway</a></li>
+        <li><a href="table.html">The Table</a></li>
+        <li><a href="memory.html" aria-current="page">The Memory Wall</a></li>
+        <li><a href="compass.html">The Compass</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="page-intro" aria-labelledby="page-title">
+        <p class="eyebrow">Room 02 &middot; Sepia</p>
+        <h1 id="page-title">The Memory <em>Wall</em></h1>
+        <p class="lede">If memory is built from shared stories, which dreams do you want written into the past? Pin one here. Everyone in a memory holds a key, and anyone can take it down.</p>
+      </section>
+
+      <section aria-labelledby="form-title">
+        <h2 id="form-title" class="eyebrow">Write a dream into the past</h2>
+        <form class="memory-form" data-memory-form>
+          <label>I want to remember&hellip;
+            <textarea name="dream" required maxlength="220"></textarea>
+          </label>
+          <div class="row">
+            <label class="grow">Who shares it with you? (optional)
+              <input type="text" name="with" maxlength="60">
+            </label>
+            <button class="button" type="submit">Pin it to the wall</button>
+          </div>
+          <p class="lede small">Saved only in this browser. You can take it down any time.</p>
+        </form>
+      </section>
+
+      <section class="section" aria-labelledby="wall-title">
+        <h2 id="wall-title" class="eyebrow">On the wall tonight</h2>
+        <div class="wall" data-wall>
+          <figure class="pin pin--photo">
+            <img src="images/friends.jpg" alt="Three friends posing together in a hallway mirror." width="900" height="1754" loading="lazy">
+            <figcaption><span>The people in the picture</span><span>Shared</span></figcaption>
+          </figure>
+          <article class="pin">
+            <blockquote>I want the long nights to sit next to the long dinners.</blockquote>
+            <footer><span>Hira and Omar</span></footer>
+          </article>
+          <figure class="pin pin--photo">
+            <img src="images/night-walk.jpg" alt="A portrait on a lively street at night, with lit buildings and a large puppet sculpture behind." width="1000" height="1327" loading="lazy">
+            <figcaption><span>Somewhere along the way</span><span>Still becoming</span></figcaption>
+          </figure>
+          <article class="pin">
+            <blockquote>The night the code finally ran at 3am and someone in another time zone wrote &ldquo;finally.&rdquo;</blockquote>
+            <footer><span>Tendai</span></footer>
+          </article>
+          <article class="pin">
+            <blockquote>My grandmother&rsquo;s courtyard, written down before I forget the smell of it.</blockquote>
+            <footer><span>Luc&iacute;a</span></footer>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="next-door" href="compass.html">
+      <span>
+        <span class="eyebrow">Next room</span>
+        <span class="next-title">The Compass</span>
+        <span class="lede">An assistant that proposes. You decide.</span>
+      </span>
+      <span class="next-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <p class="colophon"><span>The Long Table is a speculative place. The residents are imagined.</span><span>Web Based Multimedia Design / Future Telling</span></p>
+  </footer>
+</body>
+</html>

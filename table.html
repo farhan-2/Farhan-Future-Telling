@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A long table shared by people building things alone at night in different cities. No streaks, no rankings, no notifications.">
+  <title>The Long Table | The Long Table</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-room="table">
+  <a class="skip-link" href="#main">Skip to the room</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">The Long Table<span>A future-telling by Farhan Arshad</span></a>
+    <nav aria-label="Rooms">
+      <ol class="rooms">
+        <li><a href="index.html">Doorway</a></li>
+        <li><a href="table.html" aria-current="page">The Table</a></li>
+        <li><a href="memory.html">The Memory Wall</a></li>
+        <li><a href="compass.html">The Compass</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="page-intro" aria-labelledby="page-title">
+        <p class="eyebrow">Room 01 &middot; Lamplight</p>
+        <h1 id="page-title">The <em>Long</em> Table</h1>
+        <p class="lede">A physical hall and a web page that are the same place. Wherever you are, it is the hour you are working in, and someone else is working too.</p>
+      </section>
+
+      <section aria-labelledby="seats-title">
+        <h2 id="seats-title" class="eyebrow">Who is here tonight</h2>
+        <ul class="seats">
+        <li class="seat">
+          <details>
+            <summary>
+              <span class="avatar" aria-hidden="true">H</span>
+              <span class="name">Hira</span>
+              <span class="where">Karachi &middot; <time data-tz="Asia/Karachi">--:--</time></span>
+            </summary>
+            <div class="note">
+              <p>Revising a thesis chapter on rural schools.</p>
+              <button class="button button--quiet" type="button" data-knock>Knock softly</button>
+            </div>
+          </details>
+        </li>
+        <li class="seat">
+          <details>
+            <summary>
+              <span class="avatar" aria-hidden="true">W</span>
+              <span class="name">Wei</span>
+              <span class="where">Shanghai &middot; <time data-tz="Asia/Shanghai">--:--</time></span>
+            </summary>
+            <div class="note">
+              <p>Soldering a first synth kit, badly, happily.</p>
+              <button class="button button--quiet" type="button" data-knock>Knock softly</button>
+            </div>
+          </details>
+        </li>
+        <li class="seat">
+          <details>
+            <summary>
+              <span class="avatar" aria-hidden="true">T</span>
+              <span class="name">Tendai</span>
+              <span class="where">Harare &middot; <time data-tz="Africa/Harare">--:--</time></span>
+            </summary>
+            <div class="note">
+              <p>Drafting a pitch for a village solar co-op.</p>
+              <button class="button button--quiet" type="button" data-knock>Knock softly</button>
+            </div>
+          </details>
+        </li>
+        <li class="seat">
+          <details>
+            <summary>
+              <span class="avatar" aria-hidden="true">L</span>
+              <span class="name">Luc&iacute;a</span>
+              <span class="where">Bogot&aacute; &middot; <time data-tz="America/Bogota">--:--</time></span>
+            </summary>
+            <div class="note">
+              <p>Mending a jacket pattern her grandmother drew.</p>
+              <button class="button button--quiet" type="button" data-knock>Knock softly</button>
+            </div>
+          </details>
+        </li>
+        <li class="seat">
+          <details>
+            <summary>
+              <span class="avatar" aria-hidden="true">O</span>
+              <span class="name">Omar</span>
+              <span class="where">Cairo &middot; <time data-tz="Africa/Cairo">--:--</time></span>
+            </summary>
+            <div class="note">
+              <p>Rebuilding the bus timetable for his own street.</p>
+              <button class="button button--quiet" type="button" data-knock>Knock softly</button>
+            </div>
+          </details>
+        </li>
+          <li class="seat seat--open">
+            <div class="seat-inner">
+              <span class="avatar" aria-hidden="true">+</span>
+              <span class="name">An open seat</span>
+              <button class="button button--quiet" type="button" data-claim aria-pressed="false">Take this seat</button>
+            </div>
+          </li>
+        </ul>
+        <p class="status" role="status" data-status></p>
+      </section>
+
+      <section class="section" aria-labelledby="rules-title">
+        <div class="split">
+          <div>
+            <p class="eyebrow">House rules</p>
+            <h2 id="rules-title">What the table will <em>never</em> do.</h2>
+            <ol class="rules">
+              <li><div><strong>No streaks, no rankings.</strong><span>Nobody is measured. Nobody is behind.</span></div></li>
+              <li><div><strong>No notifications at night.</strong><span>You can knock softly. Nothing buzzes.</span></div></li>
+              <li><div><strong>Quiet is a feature.</strong><span>You can sit all night and say nothing.</span></div></li>
+              <li><div><strong>Leave any time.</strong><span>Your seat is kept. Your data goes when you do.</span></div></li>
+            </ol>
+          </div>
+          <figure>
+            <img src="images/late-night-table.jpg" alt="A person working alone at a long table in a dark hall." width="1600" height="948" loading="lazy">
+            <figcaption><span>Where this began</span><span>One seat, no one else</span></figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="next-door" href="memory.html">
+      <span>
+        <span class="eyebrow">Next room</span>
+        <span class="next-title">The Memory Wall</span>
+        <span class="lede">Write a dream into the past.</span>
+      </span>
+      <span class="next-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <p class="colophon"><span>The Long Table is a speculative place. The residents are imagined.</span><span>Web Based Multimedia Design / Future Telling</span></p>
+  </footer>
+</body>
+</html>
